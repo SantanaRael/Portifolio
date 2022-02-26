@@ -1,0 +1,292 @@
+body {
+    margin: 0;
+    background-color: #222222;
+    color: white;
+}
+
+.nav ul li {
+    display: inline;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav ul li a {
+    color: white;
+    font-size: 20px;
+    border-bottom: #0344f8 solid 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.portifolio {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: #0344f8 solid 4px;
+    margin-left: 20px;
+}
+
+.nav ul li a:hover {
+    border-bottom: #2a62ff solid 6px;
+}
+
+.nav ul {
+    padding: 0;
+}
+
+.nav ul li #logo {
+    margin-right: 75px;
+    padding: 16px;
+    background-color: #0344f8;
+    font-size: 30px;
+}
+
+.nav ul li #img {
+    position: absolute;
+    right: 30px;
+    top: 0;
+    background-color: #0344f8;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.barra-lateral {
+    background-color: #2d2d2d;
+    width: 62px;
+    height: 100vh;
+    text-align: center;
+}
+
+.barra-lateral a {
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+#linkedin {
+    position: absolute;
+    margin-top: 60vh;
+    left: 5px;
+}
+
+#git {
+    position: absolute;
+    margin-top: 50vh;
+    left: 5px;
+}
+
+#titulo {
+    position: absolute;
+    left: 13vw;
+    top: 13vh;
+    font-size: 40px;
+}
+
+.boas-vindas {
+    position: relative;
+    left: 13vw;
+    top: -80vh;
+    font-size: 20px;
+    width: 70vw;
+    text-align: center;
+    border: #2d2d2d solid 3px;
+    padding: 20px;
+}
+
+.projeto1 h1 {
+    margin-left: 13vw;
+    top: -30vh;
+}
+
+.projeto1 h4 {
+    margin-left: 13vw;
+    top: -25vh;
+    color: #444444;
+    font-size: 20px;
+}
+
+.projeto1 img {
+    height: 100%;
+    width: 100%;
+}
+
+.imagens {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: center;
+    margin: 40px;
+}
+
+#img1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+#img2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+#img3 {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+#img4 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+#img5 {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+@media (max-width: 700px) {
+    .imagens {
+        align-items: center;
+        display: inline-block;
+    }
+    .imagens3 {
+        margin: 0px;
+    }
+    #img1p3,
+    #img2p3 {
+        position: relative;
+        height: 93%;
+        width: 93%;
+    }
+    #img1,
+    #img2,
+    #img3,
+    #img4,
+    #img5 {
+        margin-top: 20px;
+    }
+}
+
+.projeto2 h1 {
+    position: relative;
+    margin-left: 13vw;
+    top: 5vh;
+}
+
+.projeto2 h4 {
+    position: relative;
+    margin-left: 13vw;
+    top: 10vh;
+    color: #444444;
+    font-size: 20px;
+    width: 80%;
+}
+
+.projeto2 img {
+    position: relative;
+    height: 93%;
+    width: 93%;
+    margin: 40px;
+}
+
+.imagens2 {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: center;
+    margin: 40px;
+}
+
+.projeto3 h1 {
+    position: relative;
+    margin-left: 13vw;
+    top: 5vh;
+}
+
+.projeto3 h4 {
+    position: relative;
+    margin-left: 13vw;
+    top: 10vh;
+    color: #444444;
+    font-size: 20px;
+    width: 80%;
+}
+
+#img1p3,
+#img2p3 {
+    position: relative;
+    height: 93%;
+    width: 93%;
+    margin: 40px;
+}
+
+.imagens3 {
+    display: inline-block;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: center;
+    margin: 40px;
+}
+
+.imghorizontal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: normal;
+    margin: 40px;
+}
+
+#img3p3 #img4p3 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#img4p3 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#convite {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    background-color: #2d2d2d;
+    display: flex;
+}
+
+#imgp {
+    border-radius: 50%;
+}
+
+.redes {
+    position: relative;
+    height: auto;
+    width: 100px;
+    margin-top: 20px;
+    left: 30vw;
+    font-size: 15px;
+}
+
+.contact {
+    position: relative;
+    height: auto;
+    width: 300px;
+    margin-top: 20px;
+    left: 43vw;
+    font-size: 20px;
+}
