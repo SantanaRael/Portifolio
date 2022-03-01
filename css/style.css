@@ -18,7 +18,7 @@ body {
     cursor: pointer;
 }
 
-.portifolio {
+.nav ul li a {
     color: white;
     font-size: 20px;
     text-decoration: none;
@@ -27,7 +27,18 @@ body {
     outline: none;
     border: none;
     border-bottom: #0344f8 solid 4px;
-    margin-left: 20px;
+}
+
+.navmobile {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: #0344f8 solid 4px;
+    display: inline;
 }
 
 .nav ul li a:hover {
@@ -38,11 +49,13 @@ body {
     padding: 0;
 }
 
-.nav ul li #logo {
+#logo {
     margin-right: 75px;
     padding: 16px;
     background-color: #0344f8;
     font-size: 30px;
+    height: 30px;
+    width: 30px;
 }
 
 .nav ul li #img {
@@ -55,11 +68,24 @@ body {
     cursor: pointer;
 }
 
+.menu {
+    position: absolute;
+    font-size: 40px;
+    right: 20px;
+    top: 15px;
+    display: none;
+}
+
+#checkbox {
+    display: block;
+}
+
 .barra-lateral {
-    background-color: #2d2d2d;
+    background-image: linear-gradient(#2d2d2d, #222222);
     width: 62px;
-    height: 100vh;
+    height: 80vh;
     text-align: center;
+    position: absolute;
 }
 
 .barra-lateral a {
@@ -82,30 +108,21 @@ body {
 
 #titulo {
     position: absolute;
-    left: 13vw;
-    top: 13vh;
     font-size: 40px;
 }
 
 .boas-vindas {
     position: relative;
-    left: 13vw;
-    top: -80vh;
+    left: 8vw;
+    top: 30vh;
     font-size: 20px;
-    width: 70vw;
+    max-width: 70vw;
     text-align: center;
     border: #2d2d2d solid 3px;
     padding: 20px;
 }
 
-.projeto1 h1 {
-    margin-left: 13vw;
-    top: -30vh;
-}
-
 .projeto1 h4 {
-    margin-left: 13vw;
-    top: -25vh;
     color: #444444;
     font-size: 20px;
 }
@@ -145,29 +162,6 @@ body {
     grid-area: 3 / 2 / 4 / 3;
 }
 
-@media (max-width: 700px) {
-    .imagens {
-        align-items: center;
-        display: inline-block;
-    }
-    .imagens3 {
-        margin: 0px;
-    }
-    #img1p3,
-    #img2p3 {
-        position: relative;
-        height: 93%;
-        width: 93%;
-    }
-    #img1,
-    #img2,
-    #img3,
-    #img4,
-    #img5 {
-        margin-top: 20px;
-    }
-}
-
 .projeto2 h1 {
     position: relative;
     margin-left: 13vw;
@@ -200,58 +194,63 @@ body {
     margin: 40px;
 }
 
-.projeto3 h1 {
+h1 {
     position: relative;
-    margin-left: 13vw;
-    top: 5vh;
+    margin-left: 7vw;
 }
 
-.projeto3 h4 {
+h4 {
     position: relative;
-    margin-left: 13vw;
-    top: 10vh;
+    margin-left: 8vw;
     color: #444444;
     font-size: 20px;
     width: 80%;
 }
 
-#img1p3,
-#img2p3 {
-    position: relative;
-    height: 93%;
-    width: 93%;
-    margin: 40px;
-}
-
-.imagens3 {
-    display: inline-block;
-    grid-template-columns: repeat(2, 1fr);
+.grupo1 {
+    display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     justify-items: center;
-    margin: 40px;
 }
 
-.imghorizontal {
+#img1p3 {
+    grid-area: 1 / 1 / 2 / 2;
+    height: 90vh;
+    width: 90vw;
+    margin-top: 50px;
+}
+
+#img2p3 {
+    grid-area: 2 / 1 / 3 / 2;
+    height: 90vh;
+    width: 90vw;
+    margin-top: 50px;
+}
+
+.grupo2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    justify-items: normal;
-    margin: 40px;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: center;
 }
 
-#img3p3 #img4p3 {
-    position: relative;
-    height: 100%;
-    width: 100%;
+#img3p3 {
+    grid-area: 1 / 1 / 2 / 2;
+    height: 70vh;
+    width: 40vw;
+    margin-top: 50px;
 }
 
 #img4p3 {
-    position: relative;
-    height: 100%;
-    width: 100%;
+    grid-area: 1 / 2 / 2 / 3;
+    height: 70vh;
+    width: 40vw;
+    margin-top: 50px;
 }
 
 #convite {
@@ -261,25 +260,34 @@ body {
 }
 
 .footer {
-    position: relative;
+    display: grid;
     width: 100%;
     height: 200px;
     bottom: 0;
     background-color: #2d2d2d;
-    display: flex;
+    justify-items: center;
 }
 
 #imgp {
     border-radius: 50%;
+    margin-top: 40px;
 }
 
 .redes {
     position: relative;
-    height: auto;
-    width: 100px;
-    margin-top: 20px;
-    left: 30vw;
     font-size: 15px;
+    display: inline;
+    margin-top: 20px;
+}
+
+.redes a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    margin-left: 8px;
 }
 
 .contact {
@@ -289,4 +297,80 @@ body {
     margin-top: 20px;
     left: 43vw;
     font-size: 20px;
+}
+
+.topnav {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .imagens {
+        align-items: center;
+        display: inline-block;
+        justify-items: center;
+    }
+    .imagens3 {
+        margin: 0px;
+    }
+    #img1p3,
+    #img2p3 {
+        position: relative;
+        height: 93%;
+        width: 93%;
+    }
+    #img1,
+    #img2,
+    #img3,
+    #img4,
+    #img5 {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .navmob {
+        display: none;
+    }
+    .barra-lateral {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    /* Style the navigation menu */
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+        display: block;
+    }
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+        display: none;
+    }
+    /* Style navigation menu links */
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 27px;
+        display: block;
+    }
+    /* Style the hamburger menu */
+    .topnav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    /* Add a grey background color on mouse-over */
+    .topnav a:hover {
+        color: rgb(255, 255, 255);
+    }
+    /* Style the active link (or home/logo) */
+    .active {
+        width: 100vw;
+        background-color: #0344f8;
+        color: white;
+    }
 }
