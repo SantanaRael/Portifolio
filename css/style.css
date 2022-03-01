@@ -241,14 +241,14 @@ h4 {
 
 #img3p3 {
     grid-area: 1 / 1 / 2 / 2;
-    height: 70vh;
+    height: 40vh;
     width: 40vw;
     margin-top: 50px;
 }
 
 #img4p3 {
     grid-area: 1 / 2 / 2 / 3;
-    height: 70vh;
+    height: 40vh;
     width: 40vw;
     margin-top: 50px;
 }
