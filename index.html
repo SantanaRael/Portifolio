@@ -9,6 +9,8 @@
     <link rel="icon" href="img/code.png">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+
 
     <title>Portifólio</title>
 </head>
@@ -18,45 +20,180 @@
     <div class="nav">
         <ul class="navmob">
             <li><a href="#" class="navmob" id="logo"><i class='bx bx-code-alt' style='color:#ffffff'></i></a></li>
-            <li><a class="navmob" href="index.html">Sobre mim</a></li>
-            <li><a class="navmob" href="portifolio.html">Portifólio</a></li>
-            <li><img class="navmob" src="img/perfil.jpg" height="60px" id="img"></li>
+            <li><a class="navmob" href="#inicio">Sobre mim</a></li>
+            <li><a class="navmob" href="#projeto2">Portifólio</a></li>
+            <li><a class="navmob" href="#footer">Contato</a></li>
+
         </ul>
     </div>
 
 
     <div class="topnav">
         <a href="#home" class="active"><i id="logomob" class='bx bx-code-alt' style='color:#ffffff'></i></a>
-        <div id="myLinks">
-            <a class="navmob" href="index.html"><i class='bx bx-user-pin' style='color:#0344f8' ></i> Sobre mim</a>
-            <a class="navmob" href="portifolio.html"><i class='bx bx-folder-open' style='color:#0344f8' ></i> Portifólio</a>
+        <div id="myLinks" >
+            <a class="navmob" href="#inicio"><i class='bx bx-user-pin' style='color:#0344f8' ></i> Sobre mim</a>
+            <a class="navmob" href="#projeto2"><i class='bx bx-folder-open' style='color:#0344f8' ></i> Portifólio</a>
             <a href="https://www.linkedin.com/in/israel-santana-489a341a3/" target="_blank"><i class='bx bxl-linkedin-square' style='color:#0344f8'></i> Linkedin</a>
             <a href="https://github.com/SantanaRael" target="_blank"><i class='bx bxl-github' style='color:#0344f8'></i> Github</a>
             <a href="mailto:israel100santana@gmail.com"><i class='bx bx-envelope' style='color:#0344f8'></i> E-mail</a>
         </div>
         <a class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+            <i class='bx bx-menu-alt-right' style='color:#ffffff'  ></i>
         </a>
     </div>
 
 
-    <div class="barra-lateral">
-        <a href="https://github.com/SantanaRael" target="_blank" id="git"><i class='bx bxl-github' style='color:#0344f8'  ></i></a><br>
-        <a href="https://www.linkedin.com/in/israel-santana-489a341a3/" target="_blank" id="linkedin"><i class='bx bxl-linkedin-square' style='color:#0344f8' ></i></a>
+    <div class="espaco"></div>
+
+    <div class="inicio" id="inicio">
+        <div class="index">
+            <div class="container">
+                <h3 id="titulo">Olá, Sou Israel Santana, <br> Desenvolvedor Jr.</h3>
+            </div>
+            <br><br><br>
+
+            <div class="cards">
+                <div class="card1"><a href="https://www.linkedin.com/in/israel-santana-489a341a3/" target="_blank"> <div class="icon"><i class='bx bxl-linkedin-square' style='color:#0344f8'></i> </div>  Linkedin</a></div>
+                <div class="card2"><a href="https://github.com/SantanaRael" target="_blank"><div class="icon"><i class='bx bxl-github' style='color:#0344f8'></i></div> Github</a></div>
+            </div>
+        </div>
+        <img src="img/undraw_version_control_re_mg66 1.svg" id="svg" alt="">
+    </div>
+    <div class="espaco"></div>
+    <div class="tecnologias" id="tecnologias">
+        <div class="tec">
+            <div class="icones"><i class='bx bxl-javascript' style='color:#0344f8'></i></div> Javascript</div>
+        <div class="tec">
+            <div class="icones"><i class='bx bxl-html5' style='color:#0344f8'></i></div>HTML5</div>
+        <div class="tec">
+            <div class="icones"><i class='bx bxl-css3' style='color:#0344f8'></i></div>CSS3</div>
+        <div class="tec">
+            <div class="icones"><i class='bx bxl-bootstrap' style='color:#0344f8'></i></div>Bootstrap</div>
+        <div class="tec">
+            <div class="icones"><i class='bx bxs-data' style='color:#0344f8'></i></div>Sql server</div>
+    </div>
+    <div class="espaco"></div>
+<br><br><br>
+
+    <h3 class="textcenter" >Alguns dos meus projetos:</h3>
+    <br>
+    <div class="projeto2" id="projeto2">
+        <h3 class="textcenter">Sistema de cadastro de pessoas</h3>
+        <h4 class="descricao">Esse pagina web foi criada utilizando as tecnologias Javascript, HTML e CSS utilizando a ferramenta VSCode <br> O que diferencia esse sistema de cadastros de pessoas dos demais é o minimalismo e as animações feitas em CSS, Além disso, ao finalizar
+            o preenchimento do formulário é salvo uma cópia automaticamente no dispositivo atual e os dados são direcionados para um email especifico por meio de uma API.</h4>
+        <br><br><br><br><br><br>
+        
+        <div class="swiffy-slider">
+            <ul class="slider-container">
+                <li><img src="img/p2f1.jpg" style="max-width: 1300px;height: auto;"></li>
+                <li><img src="img/p2f2.jpg" style="max-width: 1300px;height: auto;"></li>
+            </ul>
+        
+            <button type="button" class="slider-nav"></button>
+            <button type="button" class="slider-nav slider-nav-next"></button>
+            
+            <div class="slider-indicators">
+                <button class="active"></button>
+                <button></button>
+                
+            </div>
+        </div>
+        <br><br>
+
+
+        <a class="link" href="https://santanarael.github.io/Site-de-cadastro/" target="_blank">Clique aqui para acessar a página</a>
+
+
     </div>
 
-    <h1 id="titulo">Israel Santana da Silva</h1>
+    <div class="projeto1">
+        <h3 class="textcenter">Sistema de locação de Equipamentos</h3>
 
-    <div class="boas-vindas">
-        <h4>Bem-vindo(a) ao meu humilde portifólio.</h4>
-        <p>Estou cursando análise e desenvolvimento de sistemas e estou em busca de um emprego na área de tecnologia. <br> Domínio em pacote office. Facilidade em T.i e áreas correlacionadas. <br> Tenho vivência em rotinas administrativas, auxiliar e assistente.
-            Devido aos anos de estudos desenvolvi facilidade <br> em comunicação e resolução de problemas de maneira geral. Sou flexível à localidade de São Paulo – SP.
-            <br>Fascinado em tecnologia e em fase de desenvolvimento profissional.
-            <br><br> • Suporte em Windows XP, Windows 7, Windows 8, Windows 10. <br><br> • Sólidos conhecimentos em sistemas operacionais Microsoft, Backup, Formatação e Reinstalação de Windows 7,8,10. <br><br> • Conhecimentos em acessos remoto. <br><br>•
-            Conhecimentos em programação e banco de dados.</p>
+        <h4 class="descricao">Interface gráfica para desktop feita na Linguagem C utilizando a ferramenta VSCommunity 2019</h4>
+        
+        <div class="swiffy-slider">
+            <ul class="slider-container">
+                <li><img src="img/p1f1.jpg"  style="max-width: 1200px;height: auto;"></li>
+                <li><img src="img/p1f2.jpg"  style="max-width: 1200px;height: auto;"></li>
+                <li><img src="img/p1f3.jpg"  style="max-width: 1200px;height: auto;"></li>
+                <li><img src="img/p1f4.jpg"  style="max-width: 1200px;height: auto;"></li>
+                <li><img src="img/p1f5.jpg"  style="max-width: 1200px;height: auto;"></li>
+            </ul>
+        
+            <button type="button" class="slider-nav"></button>
+            <button type="button" class="slider-nav slider-nav-next"></button>
+            <br><br>
+            <div class="slider-indicators">
+                <button class="active"></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+
+                
+            </div>
+        </div>
+        
+        
+        
     </div>
 
+    <div class="projeto3">
+        <h3 class="textcenter">Ferramenta para troca de mensagens</h3>
+
+        <h4 class="descricao">Esse projeto foi feito utilizando as tecnologias Javascript, HTML e CSS utilizando a ferramenta VSCode.<br> Podemos contar com um chat que envia mensagens, um chat com a lista de pessoas e uma possivel alteração na cor do tema.</h4>
+        <br><br>
+    
+        <div class="swiffy-slider">
+            <ul class="slider-container">
+                <li><img src="img/p3f1.jpg"  style="max-width: 1200px;height: auto;"></li>
+                <li><img src="img/p3f2.jpg"  style="max-width: 1200px;height: auto;"></li>
+            </ul>
+        
+            <button type="button" class="slider-nav"></button>
+            <button type="button" class="slider-nav slider-nav-next"></button>
+            <br><br>
+            <div class="slider-indicators">
+                <button class="active"></button>
+                <button></button>
+
+            </div>
+        </div>
+    </div>
+
+   
+
+
+
+    <br><br>
+
+    <a class="link" href="https://santanarael.github.io/Aplicativo-Mensageiro/" target="_blank">Clique aqui para acessar a página</a>
+
+    <h3 class="textcenter">Vamos trabalhar juntos?</h3>
+    <br><br>
+    <div class="footer" id="footer">
+            <div class="cnt">
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <input type="hidden" name="accessKey" value="77680ce8-cc7a-4edd-8f93-c31aba49a6c0">
+                    <input type="hidden" name="redirectTo" value="https://santanarael.github.io/Portifolio/">
+                    <h3>Digite seu endereço de email</h3>
+                    <input class="textbox" type="text" id="email" placeholder="E-mail" name="email" required><br><br>
+                    <input type="submit" id="submit" onclick="alert('Email enviado com sucesso!')">
+                </form>
+                
+            </div>
+            <br>
+            <p>© 2022 Copyright: Israel Santana</p>
+    </div>
+    
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
     <script src="js/js.js"></script>
+    
 </body>
 
 </html>
+
+
+
