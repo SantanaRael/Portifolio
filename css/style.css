@@ -219,7 +219,6 @@ html {
 }
 
 .projeto1 h4 {
-    color: #444444;
     font-size: 20px;
 }
 
@@ -268,7 +267,6 @@ html {
     position: relative;
     margin-left: 13vw;
     top: 10vh;
-    color: #444444;
     font-size: 20px;
     width: 80%;
 }
@@ -516,6 +514,7 @@ form{
     width: 80%;
     text-align: center;
     visibility: hidden;
+    color: white;
 }
 
 .link {
@@ -705,5 +704,9 @@ form{
     #titulo{
         font-size: 30px;
 
+    }
+
+    .slider-nav{
+        visibility: visible !important;
     }
 }
