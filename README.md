@@ -2,4 +2,4 @@
 
 Meu portifolio com alguns projetos
 
-santanarael.github.io/Portifolio/
+https://santanarael.github.io/Portifolio/
