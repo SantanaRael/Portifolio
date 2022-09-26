@@ -1,40 +1,49 @@
-window.sr = ScrollReveal({reset: true});
+    let tecFront = document.querySelector(".front");
+    let tecsFront = document.querySelector(".tecFront");
+    let iconFront = document.querySelector(".front i");
+    
+    tecFront.addEventListener("click", function () {
+        iconFront.classList.toggle("iconOpen");
+        tecsFront.classList.toggle("open");
+    });
 
-    sr.reveal('.tecnologias', {duration:3000});
+
+    let tecBack = document.querySelector(".back");
+    let tecsBack = document.querySelector(".tecBack");
+    let iconBack = document.querySelector(".back i");
+    
+    tecBack.addEventListener("click", function () {
+        iconBack.classList.toggle("iconOpen");
+        tecsBack.classList.toggle("open");
+    });
+     
+
+
+    window.sr = ScrollReveal({reset: true});
 
     sr.reveal('.inicio', {duration:1000});
+    sr.reveal('.sobre', {duration:1000});
+    sr.reveal('.front', {duration:1000});
+    sr.reveal('.back', {duration:1000});
+    sr.reveal('.projetos', {duration:1000});
+    sr.reveal('.projeto', {duration:1000});
+    sr.reveal('.footer', {duration:1000});
 
     sr.reveal('.textcenter', {duration:1000});
-    sr.reveal('.descricao', {duration:1000});
-
-    sr.reveal('.swiffy-slider', {duration:2000});
-
 
 
 
 function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-        x.style.display = "none";
+    var menu = document.querySelector(".topnav");
+    if (menu.style.height === "60px") {
+        menu.style.height = "auto";
     } else {
-        x.style.display = "block";
+        menu.style.height = "60px";
     }
 }
 
-$(document).ready(function () {
-    $('.carousel').carousel({
-        pause: "false"
-    });
-    $('.carousel').css({ 'margin': 0, 'width': $(window).outerWidth(), 'height': $(window).outerHeight() });
-    $('.carousel .item').css({ 'position': 'fixed', 'width': '100%', 'height': '100%' });
-    $('.carousel-inner div.itemimg').each(function () {
-        varimgSrc = $(this).attr('src');
-        $(this).parent().css({ 'background': 'url(' + imgSrc + ') center center no-repeat', '-webkit-background-size': '100% ', '-moz-background-size': '100%', '-o-background-size': '100%', 'background-size': '100%', '-webkit-background-size': 'cover', '-moz-background-size': 'cover', '-o-background-size': 'cover', 'background-size': 'cover' });
-        $(this).remove();
-    });
-    $(window).on('resize', function () {
-        $('.carousel').css({ 'width': $(window).outerWidth(), 'height': $(window).outerHeight() });
-    });
-    });
+
+
+
 
     
