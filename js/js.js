@@ -1,4 +1,4 @@
-    let tecFront = document.querySelector(".front");
+let tecFront = document.querySelector(".front");
     let tecsFront = document.querySelector(".tecFront");
     let iconFront = document.querySelector(".front i");
     
@@ -41,6 +41,9 @@ function myFunction() {
         menu.style.height = "60px";
     }
 }
+
+
+
 
 
 
