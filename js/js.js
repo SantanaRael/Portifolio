@@ -1,52 +1,55 @@
-let tecFront = document.querySelector(".front");
-    let tecsFront = document.querySelector(".tecFront");
-    let iconFront = document.querySelector(".front i");
-    
-    tecFront.addEventListener("click", function () {
-        iconFront.classList.toggle("iconOpen");
-        tecsFront.classList.toggle("open");
-    });
-
-
-    let tecBack = document.querySelector(".back");
-    let tecsBack = document.querySelector(".tecBack");
-    let iconBack = document.querySelector(".back i");
-    
-    tecBack.addEventListener("click", function () {
-        iconBack.classList.toggle("iconOpen");
-        tecsBack.classList.toggle("open");
-    });
-     
-
-
-    window.sr = ScrollReveal({reset: true});
-
-    sr.reveal('.inicio', {duration:1000});
-    sr.reveal('.sobre', {duration:1000});
-    sr.reveal('.front', {duration:1000});
-    sr.reveal('.back', {duration:1000});
-    sr.reveal('.projetos', {duration:1000});
-    sr.reveal('.projeto', {duration:1000});
-    sr.reveal('.footer', {duration:1000});
-
-    sr.reveal('.textcenter', {duration:1000});
-
-
-
-function myFunction() {
-    var menu = document.querySelector(".topnav");
-    if (menu.style.height === "60px") {
-        menu.style.height = "auto";
-    } else {
-        menu.style.height = "60px";
-    }
+// Função para alternar a exibição das tecnologias front-end
+function toggleTecFront() {
+    const iconFront = document.querySelector(".front i");
+    const tecsFront = document.querySelector(".tecFront");
+    iconFront.classList.toggle("iconOpen");
+    tecsFront.classList.toggle("open");
 }
 
+// Evento de clique para as tecnologias front-end
+document.querySelector(".front").addEventListener("click", toggleTecFront);
 
+// Função para alternar a exibição das tecnologias back-end
+function toggleTecBack() {
+    const iconBack = document.querySelector(".back i");
+    const tecsBack = document.querySelector(".tecBack");
+    iconBack.classList.toggle("iconOpen");
+    tecsBack.classList.toggle("open");
+}
 
+// Evento de clique para as tecnologias back-end
+document.querySelector(".back").addEventListener("click", toggleTecBack);
 
+// Inicialização do ScrollReveal
+window.sr = ScrollReveal({ reset: true });
 
+// Elementos a serem revelados com o ScrollReveal
+const elementsToReveal = [
+    '.inicio',
+    '.sobre',
+    '.front',
+    '.back',
+    '.projetos',
+    '.projeto',
+    '.footer',
+    '.textcenter'
+];
 
+// Função para revelar os elementos com o ScrollReveal
+function revealElements() {
+    elementsToReveal.forEach(element => {
+        sr.reveal(element, { duration: 1000 });
+    });
+}
 
+// Chamar a função para revelar os elementos ao carregar a página
+revealElements();
 
-    
+// Função para controlar a abertura e fechamento do menu móvel
+function toggleMenu() {
+    const menu = document.querySelector(".topnav");
+    menu.style.height = menu.style.height === "60px" ? "auto" : "60px";
+}
+
+// Evento de clique para abrir/fechar o menu móvel
+document.querySelector(".icon").addEventListener("click", toggleMenu);
